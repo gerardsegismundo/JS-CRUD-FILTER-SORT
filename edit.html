@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>VS Media Assesment | Edit user</title>
+
+    <script src="./js/edit.js" type="module"></script>
+
+    <style>
+      label.is-required::after {
+        content: '*';
+        color: var(--bs-danger);
+      }
+
+      .ml-auto {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <a href="index.html" class="btn btn-outline-warning px-2">
+        <i class="fa fa-angle-left"></i>&nbsp;&nbsp;back to users</a
+      >
+      <h1 class="text-primary mt-5">Edit User</h1>
+      <h5 id="edit-user-id"></h5>
+
+      <form id="edit-form">
+        <div class="row mt-5">
+          <div class="col-xs-12 col-sm-4">
+            <label for="edit-name" class="is-required">Name</label>
+            <input
+              id="edit-name"
+              name="name"
+              type="text"
+              class="form-control"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <label for="edit-username" class="is-required">Username</label>
+            <input
+              name="username"
+              id="edit-username"
+              type="text"
+              class="form-control"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col">
+            <label for="edit-email" class="is-required">Email</label>
+            <input
+              id="edit-email"
+              name="email"
+              type="text"
+              class="form-control"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-xs-12 col-md-7">
+            <label for="edit-street" class="is-required">Address Street</label>
+            <input
+              name="street"
+              id="edit-street"
+              type="text"
+              class="form-control"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col">
+            <label for="edit-suite">Suite</label>
+            <input
+              name="suite"
+              id="edit-suite"
+              type="text"
+              class="form-control"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-xs-12 col-md-6">
+            <label for="edit-city" class="is-required">City</label>
+            <input
+              name="city"
+              id="edit-city"
+              type="text"
+              class="form-control"
+            />
+          </div>
+          <div class="col">
+            <label for="edit-zipcode" class="is-required">Zip Code</label>
+            <input
+              name="zipcode"
+              id="edit-zip-code"
+              type="text"
+              class="form-control"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col">
+            <label for="edit-phone" class="is-required">Phone</label>
+            <input
+              name="phone"
+              id="edit-phone"
+              type="text"
+              class="form-control"
+            />
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-xs-12 col-md-7">
+            <label for="edit-website">Website</label>
+            <input
+              name="website"
+              id="edit-website"
+              type="text"
+              class="form-control"
+            />
+          </div>
+        </div>
+
+        <div class="row mt-4 mb-3">
+          <div class="col-xs-12 col-md-4">
+            <label for="edit-company-name">Company Name</label>
+            <input
+              name="companyName"
+              id="edit-company-name"
+              type="text"
+              class="form-control"
+            />
+          </div>
+          <div class="col-xs-12 col-md">
+            <label for="edit-company-catchphrase">Company Catchphrase</label>
+            <input
+              name="companyCatchphrase"
+              id="edit-company-catchphrase"
+              type="text"
+              class="form-control"
+            />
+          </div>
+          <div class="col">
+            <label for="edit-company-BS">Company BS</label>
+            <input
+              name="companyBS"
+              id="edit-company-BS"
+              type="text"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <button class="btn btn-success mt-5 px-3 ml-auto d-block" type="submit">
+          Done&nbsp;&nbsp;<i class="fa fa-check"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

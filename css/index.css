@@ -1,0 +1,26 @@
+td {
+  line-height: 2rem;
+}
+
+tr[data-is-visible='false'] {
+  display: none;
+}
+
+.td-btn-group button {
+  position: relative;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+}
+
+td button:not(:last-child) {
+  margin-right: 0.15rem;
+}
+
+td button i.fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}

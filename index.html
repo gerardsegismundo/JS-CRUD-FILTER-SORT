@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+    <script type="module" src="./js/index.js"></script>
+    <title>VS Media Assesment</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-primary">Users</h1>
+
+      <div class="row mt-5">
+        <div class="col">
+          <select id="select-sort" class="form-select">
+            <option selected>Sort by</option>
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+            <option value="username">Username</option>
+            <option value="email">Email</option>
+          </select>
+        </div>
+
+        <div class="col">
+          <input
+            id="search-box"
+            type="text"
+            class="col search form-control"
+            placeholder="Who you looking for?"
+            type="search"
+          />
+        </div>
+
+        <div class="col d-flex flex-row-reverse">
+          <a
+            class="btn btn-success fw-bold d-flex align-items-center justify-content-center px-4"
+            href="add.html"
+          >
+            Add user&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <table class="table table-striped mt-4" id="user-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="user-list"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
