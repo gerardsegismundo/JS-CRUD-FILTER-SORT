@@ -122,6 +122,7 @@ class UI {
           // If match
           if (regex.test(td.textContent)) return matches.push(td.parentElement)
 
+          // Removes the row that doesn't match on the display
           td.parentElement.setAttribute('data-is-visible', 'false')
         })
       }
@@ -143,7 +144,6 @@ class API {
       localStorage.setItem('users', JSON.stringify(users))
       return users
     } catch (error) {
-      // DO LATER - display error
       console.log('error')
       return false
     }
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (contains('delete-btn')) {
       const userId = targetId.replace('delete-', '')
 
-      const confirmDelete = confirm(`Are you sure you want to delete user #${userId}`)
+      const confirmDelete = confirm(`Are you sure you want to delete this user (id: ${userId})?`)
 
       if (confirmDelete) {
         UI.deleteUser(targetId, userId)
