@@ -43,14 +43,15 @@ class UI {
   static viewUser(targetId) {
     const userIdV = targetId.replace('view-', '')
     createUserCookie(userIdV)
-    window.location.href = '/user.html'
+
+    window.location.href = 'user.html'
   }
 
   static editUser(targetId) {
     const userIdE = targetId.replace('edit-', '')
     createUserCookie(userIdE)
 
-    window.location.href = '/edit.html'
+    window.location.href = 'edit.html'
   }
 
   static async deleteUser(elId, userId) {
@@ -172,8 +173,6 @@ class API {
 document.addEventListener('DOMContentLoaded', async () => {
   // Display Users
   UI.displayUsers()
-
-  console.log(document.baseURI)
 
   // Sort Users Table
   document.getElementById('select-sort').addEventListener('change', e => UI.sortUsers(e))
