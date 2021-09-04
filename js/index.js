@@ -49,6 +49,7 @@ class UI {
   static editUser(targetId) {
     const userIdE = targetId.replace('edit-', '')
     createUserCookie(userIdE)
+
     window.location.href = '/edit.html'
   }
 
@@ -171,6 +172,8 @@ class API {
 document.addEventListener('DOMContentLoaded', async () => {
   // Display Users
   UI.displayUsers()
+
+  console.log(document.baseURI)
 
   // Sort Users Table
   document.getElementById('select-sort').addEventListener('change', e => UI.sortUsers(e))
