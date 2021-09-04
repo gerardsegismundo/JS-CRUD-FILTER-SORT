@@ -45,6 +45,10 @@ class UI {
     const userIdV = targetId.replace('view-', '')
     createUserCookie(userIdV)
 
+    if (window.location.href.includes('JS-CRUD-FILTER-SORT')) {
+      return (window.location.href = '/JS-CRUD-FILTER-SORT/user.html')
+    }
+
     window.location.href = '/user.html'
   }
 
@@ -53,7 +57,6 @@ class UI {
     createUserCookie(userIdE)
 
     if (window.location.href.includes('JS-CRUD-FILTER-SORT')) {
-      console.log('IT CONTAINSS!')
       return (window.location.href = '/JS-CRUD-FILTER-SORT/edit.html')
     }
 
