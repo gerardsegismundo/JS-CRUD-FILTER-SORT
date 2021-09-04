@@ -53,6 +53,7 @@ class UI {
     createUserCookie(userIdE)
 
     if (window.location.href.includes('JS-CRUD-FILTER-SORT')) {
+      console.log('IT CONTAINSS!')
       return (window.location.href = '/JS-CRUD-FILTER-SORT/edit.html')
     }
 
