@@ -45,20 +45,12 @@ class UI {
     const userIdV = targetId.replace('view-', '')
     createUserCookie(userIdV)
 
-    if (window.location.href.includes('JS-CRUD-FILTER-SORT')) {
-      return (window.location.href = '/JS-CRUD-FILTER-SORT/user.html')
-    }
-
     window.location.href = '/user.html'
   }
 
   static editUser(targetId) {
     const userIdE = targetId.replace('edit-', '')
     createUserCookie(userIdE)
-
-    if (window.location.href.includes('JS-CRUD-FILTER-SORT')) {
-      return (window.location.href = '/JS-CRUD-FILTER-SORT/edit.html')
-    }
 
     window.location.href = '/edit.html'
   }
