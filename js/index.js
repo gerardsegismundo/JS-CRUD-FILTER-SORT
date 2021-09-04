@@ -2,6 +2,7 @@
 
 import { debounce, createUserCookie, showAlert } from './utils.js'
 
+console.log(window.location)
 class UI {
   static async displayUsers() {
     let users
@@ -44,14 +45,16 @@ class UI {
     const userIdV = targetId.replace('view-', '')
     createUserCookie(userIdV)
 
-    window.location.href = 'user.html'
+    // window.location.href = '/user.html'
+    window.location.href = window.location.origin + '/user.html'
   }
 
   static editUser(targetId) {
     const userIdE = targetId.replace('edit-', '')
     createUserCookie(userIdE)
 
-    window.location.href = 'edit.html'
+    // window.location.href = '/edit.html'
+    window.location.href = window.location.origin + '/edit.html'
   }
 
   static async deleteUser(elId, userId) {
