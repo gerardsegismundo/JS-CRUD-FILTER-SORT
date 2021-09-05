@@ -2,7 +2,6 @@
 
 import { debounce, createUserCookie, showAlert } from './utils.js'
 
-console.log(window.location)
 class UI {
   static async displayUsers() {
     let users

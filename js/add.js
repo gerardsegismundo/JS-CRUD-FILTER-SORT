@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
       for (const key in errors) {
         const input = document.getElementsByName(key)[0]
         input.classList.add('is-invalid')
+        console.log(key)
+        console.log(input.nextElementSibling)
         // Display errors
         input.nextElementSibling.innerText = errors[key]
       }
